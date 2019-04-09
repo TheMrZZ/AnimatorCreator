@@ -1,11 +1,16 @@
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+const production = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
   router: {
     base: '/AnimatorCreator/'
+  },
+  build: {
+    publicPath: 'assets'
   }
-} : {}
+} : {router: {}, publicPath:{}}
+
+console.log(production)
 
 module.exports = {
-  ...routerBase,
+  router: production.router,
   /*
   ** Headers of the page
   */
@@ -29,7 +34,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    publicPath: 'assets',
+    ...production.build,
     /*
     ** Run ESLint on save
     */
@@ -52,3 +57,4 @@ module.exports = {
   }
 }
 
+console.log(module.exports)

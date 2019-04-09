@@ -48,7 +48,7 @@
       onSubmit: function (submit) {
         const form = this.$refs.form
         submit.preventDefault()
-        console.log(form.checkValidity())
+        form.checkValidity()
         this.downloadDatapack()
       },
 
