@@ -23,11 +23,13 @@ class Datapack {
     const minecraftPath = basePath + 'minecraft/'
     const functionsPath = basePath + `${datapackName}/functions/`
 
-    for (const [basePath, req] of [[minecraftPath, minecraftRequire], [functionsPath, functionsRequire]]) {
+    for (const [basePath, req, processText] of [
+      [minecraftPath, minecraftRequire, m => JSON.stringify(m, null, 2)],
+      [functionsPath, functionsRequire, m => m.default]
+    ]) {
       for (let path of req.keys()) {
-        const initialText = req(path)
-        let text = JSON.stringify(initialText, null, 2)
-
+        let text = processText(req(path))
+        console.log(text)
         text = text
           .replace(/{datapackName}/g, datapackName)
           .replace(/{animatorName}/g, animatorName)
