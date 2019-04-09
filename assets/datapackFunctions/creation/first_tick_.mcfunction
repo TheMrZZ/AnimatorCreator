@@ -9,4 +9,4 @@
 # @returns Nothing if no initial state needs to be set.
 
 # This function only purpose is to call {datapackName}:creation/first_tick if the {animatorName} was selected
-execute if entity @s[tag={animatorTag}] run {datapackName}:creation/first_tick
+execute if entity @s[tag={animatorTag}] run function {datapackName}:creation/first_tick

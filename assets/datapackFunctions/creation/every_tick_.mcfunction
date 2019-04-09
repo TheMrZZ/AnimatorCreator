@@ -11,4 +11,4 @@
 
 
 # This function only purpose is to call {datapackName}:creation/every_tick if the {animatorName} was selected
-execute if entity @s[tag={animatorTag}] run {datapackName}:creation/every_tick
+execute if entity @s[tag={animatorTag}] run function {datapackName}:creation/every_tick
