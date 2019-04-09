@@ -43,7 +43,7 @@ class Datapack {
         description: `${animatorName} for the Animation Creator datapack.`
       }
     }, null, 2))
-    zip.generateAsync({ type: 'blob' })c
+    zip.generateAsync({ type: 'blob' })
       .then(content => saveAs(content, animatorName))
   }
 }
