@@ -1,3 +1,4 @@
 ## Called at the start of an animation
 #
-# @target an animated entity
+# @target @s An armor_stand holding information. This entity is used to retrieve informations about the current animation frame.
+#         @e[tag=animated_entity] The real animated entity. This entity is the one that needs to be animated.
