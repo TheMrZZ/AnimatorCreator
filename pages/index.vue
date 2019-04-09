@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <header>
-      <h1 class="title">{{name}} Animator</h1>
+      <h1 class="title">{{name}} Animator Test</h1>
     </header>
 
     <b-form class="form" ref="form" @submit="onSubmit">
