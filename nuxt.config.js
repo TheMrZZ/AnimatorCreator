@@ -1,4 +1,11 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/AnimatorCreator/'
+  }
+} : {}
+
 module.exports = {
+  ...routerBase,
   /*
   ** Headers of the page
   */
