@@ -12,3 +12,4 @@ If you need to change something, change it in the "creation" folder, not in this
 However, if you want to delete an unused function in this folder, you can.
 It will speed up the time needed to load/reload the datapack.
 However, never change the content of those functions.
+/!\ If you delete a function here, don't forget to remove it from the tags! In data/minecraft/animators/creation/xxx.json
