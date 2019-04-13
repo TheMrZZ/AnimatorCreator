@@ -1,4 +1,6 @@
-## Called every tick during an animation
+## Called each time there is a new animation frame.
+## This does NOT mean there is interesting data for this animator.
+## You need to take that into account.
 #
 # @target @s An armor_stand holding information. This entity is used to retrieve informations about the current animation frame.
 #
