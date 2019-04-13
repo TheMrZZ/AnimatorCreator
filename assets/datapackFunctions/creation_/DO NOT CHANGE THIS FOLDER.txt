@@ -5,3 +5,10 @@ Those functions are only used to test if the current animator was selected at cr
 If it is, they will call the {datapackName}:creation/ functions.
 
 If you need to change something, change it in the "creation" folder, not in this one.
+
+
+----
+
+However, if you want to delete an unused function in this folder, you can.
+It will speed up the time needed to load/reload the datapack.
+However, never change the content of those functions.
