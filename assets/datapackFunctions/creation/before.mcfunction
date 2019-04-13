@@ -9,3 +9,4 @@
 # @target The player creating the animation
 #
 # @param @e[name=anim_data,tag=current]: the animation data holder
+# @param (READ ONLY) ArmorItems[0].tag.Anim: the recorded animation, in the animation data holder

@@ -9,6 +9,7 @@
 # @target The player creating the animation
 #
 # @param @e[name=anim_data,tag=current]: the animation data holder
+# @param (READ ONLY) ArmorItems[0].tag.Anim: the recorded animation, in the animation data holder
 
 # This function only purpose is to call {datapackName}:creation/after if the {animatorName} was selected
 execute if entity @s[tag={animatorTag}] run function {datapackName}:creation/after
