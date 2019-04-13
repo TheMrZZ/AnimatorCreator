@@ -1,0 +1,7 @@
+/!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\
+
+Nothing in this folder should be changed.
+Those functions are only used to test if the current animator was selected at creation time.
+If it is, they will call the {datapackName}:creation/ functions.
+
+If you need to change something, change it in the "creation" folder, not in this one.
